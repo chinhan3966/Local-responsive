@@ -97,7 +97,7 @@ ul li a:hover{
     width: 100%;
     padding-top: 100px;
     object-fit: cover;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .bg-img img{
@@ -236,7 +236,7 @@ span{
     width: 100px;
     height: 3px;
     background: #000;
-    margin-left: 627px;
+    margin-left: 797px;
     margin-top: 11px;
     
 }
@@ -265,9 +265,22 @@ span{
 .banner{
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 50px;
     cursor: pointer;
+}
+.banner p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.banner img{
+    width: 100%;
+    height: 206px;
 }
 
 .banner1{
@@ -280,12 +293,14 @@ span{
 
 .banner2{
     flex-basis: 30%;
+    /* margin-top: -23px; */
 }
 .banner2:hover{
     opacity: 0.9;
 }
 .banner3{
     flex-basis: 30%;
+    /* margin-top: -4px; */
 }
 .banner3:hover{
     opacity: 0.9;
@@ -398,18 +413,18 @@ span{
    }
    
    .bg-img {
-       min-width: 250%;
+       min-width: 281%;
        
    }
 
    .list{
-       margin-left: 65% ;
+       margin-left: 81% ;
    }
    .shirt{
-    min-width: 248%;
+    min-width: 279%;
    }
    .accessory{
-       margin-left: 120%;
+       margin-left: 142%;
    }
    .hr{
        display: none;
@@ -417,40 +432,56 @@ span{
 
    .annouce{
        width: 100%;
-       margin-left: 69%;
+       margin-left: 86%;
    }
 
    .banner{
-      
-       flex-direction: column;
-       flex-wrap: wrap;
+      /* justify-content: center;
+      flex-direction: column; */
+      justify-content: space-around;
+      width: 280%; 
    }
-   .banner1{
-       flex-basis: 100%;
-       margin-left: 75%;
-      
+   .banner img{
+       height: 204px;
+       
    }
 
+  
+   .banner1{
+       /* width: 100%;
+       margin-left: 79%; */
+       
+   }
+   .banner1 img{
+      /* width: 100%;
+      height: 300px;   */
+      flex-shrink: 0;
+
+   }
    
    .banner2{
-        flex-basis: 50%;
-        margin-left: 75%;
-        
-        
+    /* width: 100%;
+    margin-left: 79%;    */
+    
     }
-
+    .banner2 img{
+        flex-shrink: 0;
+    }
+    
     .banner3{
-       flex-basis: 50%;
-       margin-left: 75%;
-      
+        /* width: 100%;
+        margin-left: 79%; */
+        
     }   
+    .banner3 img{
+        flex-shrink: 0;
+    }
     .login{
-        min-width: 250%;
+        min-width: 281%;
     }
     .login-h1{
         font-size: 20px;
         transform: translateY(10%);
-        
     }
 
 
